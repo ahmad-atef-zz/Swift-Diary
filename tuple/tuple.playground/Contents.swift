@@ -1,4 +1,29 @@
 import UIKit
+
+
+var maybeSomething: String! = "hey"
+maybeSomething.uppercased()
+
+class Something {
+    let someStr: String!
+    init(str: String!) {
+        self.someStr = str
+        self.someStr?.description
+    }
+}
+var optionString: String? = nil
+var optionalStrng2 = Optional("123")
+
+Something(str: optionString)
+let forSureThing = maybeSomething // hey
+forSureThing?.uppercased()
+
+let anotherThing = forSureThing
+anotherThing?.uppercased()
+
+
+
+
 var pair: (Int, String)
 
 // A Tuple is a lightweight custom ordered collection of multiple values. 😍
